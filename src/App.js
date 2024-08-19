@@ -8,7 +8,7 @@ function App() {
   const fetchRates = async () => {
     const endpoint = 'https://cashwyreservice.azurewebsites.net/api/v1.0/Ext/getUSDNGNRates';
     const payload = {
-      appId: 'e14a0642-6b0c-4023-8a93-e6a96748fee0'
+      appId: process.env.REACT_APP_APP_ID
     };
 
     try {
